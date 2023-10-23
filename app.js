@@ -33,7 +33,7 @@ io.on('connection', async (socket) => {
 app.use(logger('dev'));
 //-->Router
 app.use(express.static(join(__dirname,'./client/dist')));
-app.get('api',RouterManager);
+app.get('/api',RouterManager);
 
 
 server.listen(port, () => {
