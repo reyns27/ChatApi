@@ -7,7 +7,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/socket.io':{
-        target:"http://localhost:3000",
+        target:"https://chatapi-dev-sqxp.1.us-1.fl0.io:8080",
         ws:true
       }
     }
