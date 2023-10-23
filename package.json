@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build":"npm run --prefix client build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "4.18.2",
     "morgan": "1.10.0",
     "pg": "8.11.3",
